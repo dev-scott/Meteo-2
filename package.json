@@ -1,0 +1,12 @@
+{
+  "name": "meteo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass -w --output-style compressed public/scss -o public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

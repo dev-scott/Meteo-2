@@ -1,0 +1,26 @@
+.citation {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.liens {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  padding: 15px;
+  margin-top: 20px;
+
+  padding-bottom: 20px;
+  //   background: rgb(43, 255, 0);
+}
+
+.mes-liens {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+}

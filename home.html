@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Public/css/style.css" />
+
+    <!-- favicon -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/asset/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/asset/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/asset/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/asset/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/asset/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/asset/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/asset/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/asset/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/asset/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/asset/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/asset/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/asset/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/asset/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/asset/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- favicon -->
+
+    <!-- PWA -->
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta name="apple-mobile-web-app-status-bar" content="white" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="white" />
+    <link rel="apple-touch-icon" href="/assets/favicon/icons/icon-96x96.png" />
+    <!-- PWA -->
+
+    <link rel="apple-touch-icon" href="/assets/icons/icon-96x96.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="locked">
+          <i class="fa-solid fa-unlock-keyhole"></i>
+          <span>Lock screen</span>
+        </div>
+        <div class="circles">
+          <div class="circle circle-1 rempli"></div>
+          <div class="circle circle-2"></div>
+        </div>
+
+        <div class="gift"><i class="fa-solid fa-gift"></i></div>
+      </div>
+
+      <div class="rechercher">
+        <input
+          id="city"
+          autocomplete="off"
+          onkeyup="search_animal()"
+          type="text"
+          name="search"
+          class="searchbar"
+          placeholder="Search city.."
+        />
+        <label for="city" class="sr-only">rechercher une ville</label>
+      </div>
+
+      <div class="box-1">
+        <div class="contain-date">
+          <div class="mydate"></div>
+
+          <div class="hourse"></div>
+        </div>
+
+        <div class="degre">
+          <h1 class="degreTitle"></h1>
+        </div>
+
+        <div class="img-degre">
+          <div>
+            <img src="/asset/img/jour/04n.svg" alt="" class="logo-meteo" />
+            <div><span class="onImage"></span></div>
+          </div>
+        </div>
+
+        <div class="contain-max-min">
+          <div class="max-min">
+            <span class="max"> Max:33 </span> <span class="min">Min: 24</span>
+          </div>
+          <span>Wind: South West 7 km/h</span>
+        </div>
+      </div>
+
+      <div class="box-2">
+        <div class="TimeZone"></div>
+        <span class="theHourse">24 hours next</span>
+
+        <div class="heure-bloc-prevision">
+          <div class="bloc-h">
+            <p class="heure-nom-prevision">10 h</p>
+            <p class="heure-prevision-valeur">9°</p>
+          </div>
+          <div class="bloc-h">
+            <p class="heure-nom-prevision">13h</p>
+            <p class="heure-prevision-valeur">10°</p>
+          </div>
+          <div class="bloc-h">
+            <p class="heure-nom-prevision">16h</p>
+            <p class="heure-prevision-valeur">11°</p>
+          </div>
+          <div class="bloc-h">
+            <p class="heure-nom-prevision">19h</p>
+            <p class="heure-prevision-valeur">7°</p>
+          </div>
+          <div class="bloc-h">
+            <p class="heure-nom-prevision">22h</p>
+            <p class="heure-prevision-valeur">12°</p>
+          </div>
+          <div class="bloc-h">
+            <p class="heure-nom-prevision">1h</p>
+            <p class="heure-prevision-valeur">9°</p>
+          </div>
+          <div class="bloc-h">
+            <p class="heure-nom-prevision">4h</p>
+            <p class="heure-prevision-valeur">8°</p>
+          </div>
+        </div>
+        <span class="theHourse">next day</span>
+        <div class="jour-prevision-bloc">
+          <div class="bloc-j">
+            <p class="jour-prevision-nom">jeu</p>
+            <p class="jour-prevision-temp">10°</p>
+          </div>
+          <div class="bloc-j">
+            <p class="jour-prevision-nom">ven</p>
+            <p class="jour-prevision-temp">12°</p>
+          </div>
+          <div class="bloc-j">
+            <p class="jour-prevision-nom">sam</p>
+            <p class="jour-prevision-temp">7°</p>
+          </div>
+          <div class="bloc-j">
+            <p class="jour-prevision-nom">dim</p>
+            <p class="jour-prevision-temp">10°</p>
+          </div>
+          <div class="bloc-j">
+            <p class="jour-prevision-nom">lun</p>
+            <p class="jour-prevision-temp">10°</p>
+          </div>
+          <div class="bloc-j">
+            <p class="jour-prevision-nom">mar</p>
+            <p class="jour-prevision-temp">9°</p>
+          </div>
+          <div class="bloc-j">
+            <p class="jour-prevision-nom">mer</p>
+            <p class="jour-prevision-temp">8°</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="citation">
+        <h2>"Que de temps perdu à gagner du temps ! "</h2>
+        <p>De Paul Morand</p>
+      </div>
+
+      <div class="liens">
+        <div>
+          <a
+            href="https://www.instagram.com/?utm_source=pwa_homescreen"
+            class="instagram mes-liens"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div>
+          <a
+            href="https://www.youtube.com/channel/UCX13-QgrpQztMgP5XxiYM2w"
+            class="youtube mes-liens"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <div>
+          <a
+            href="https://twitter.com/?utm_source=homescreen&utm_medium=shortcut"
+            class="twitter mes-liens"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

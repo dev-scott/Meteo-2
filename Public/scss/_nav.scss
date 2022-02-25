@@ -1,0 +1,91 @@
+@import "../setting/config";
+
+.nav {
+  width: 100%;
+  display: flex;
+
+  .locked {
+    width: 30%;
+
+    @include flexContainer;
+
+    .fa-unlock-keyhole {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  .circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    .circle {
+      margin-right: 5px;
+
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      border: 2px solid $white;
+      background: #000;
+    }
+    .rempli {
+      background: $white;
+    }
+  }
+
+  .gift {
+    @include flexContainer;
+
+    width: 40%;
+
+    .fa-gift {
+      font-size: 20px;
+
+      color: $white;
+    }
+  }
+}
+
+.rechercher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  font-family: "Times New Roman", Times, serif;
+
+  margin-top: 20px;
+
+  width: 95%;
+  border-radius: 10px;
+  height: 8%;
+}
+
+.searchbar {
+  border-radius: 15px 0 15px 0px;
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 25px;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #313131;
+  border-bottom: 3px solid yellow;
+
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+.sr-only {
+  color: rgb(255, 255, 255);
+}
